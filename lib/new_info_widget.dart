@@ -1,5 +1,6 @@
 
 //merge完了。
+//exp2
 import 'package:flutter/material.dart';
 
 class NewInfoWidget extends StatelessWidget {
