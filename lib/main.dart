@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'new_info_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -50,6 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            NewInfoWidget(info:'現在のテーマカラーはindigoです。'),
+
             const Text(
               'You have pushed the button this many times:',
             ),
@@ -57,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4!.copyWith(
                 fontSize: 100.0,
-                color:Colors.pink,
+                color:Colors.indigo,
               ),
             ),
           ],
